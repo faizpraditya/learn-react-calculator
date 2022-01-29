@@ -1,4 +1,5 @@
 import { Component } from "react"
+import ButtonMinus from "./ButtonMinus"
 import ButtonPlus from "./ButtonPlus"
 import ButtonResult from "./ButtonResult"
 
@@ -74,7 +75,7 @@ class Calculator extends Component {
             <button onClick={() => this.setValue(1)}>1</button>
             <button onClick={() => this.setValue(2)}>2</button>
             <button onClick={() => this.setValue(3)}>3</button>
-            <button>-</button><br/>
+            <ButtonMinus number1={this.state.number1} nextValue={this.nextValue} setOption={this.setOption} /> <br/>
             <button onClick={() => this.clear()}>C</button>
             <button onClick={() => this.setValue(0)}>0</button>
             <ButtonResult number1={this.state.number1} number2={this.state.number2} getResult={this.getResult} option={this.state.option}/>
