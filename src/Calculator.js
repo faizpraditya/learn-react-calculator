@@ -83,9 +83,9 @@ class Calculator extends Component {
             </div>
             <div className="">
                 <div className="row d-flex justify-content-center">
-                    <button className="btn btn-secondary col-1" onClick={this.allClear}>AC</button>
-                    <button className="btn btn-secondary col-1" onClick={this.clear}>C</button>
-                    <button className="btn btn-secondary col-1" onClick={this.backspace}>&#8592;</button>
+                    <button className="btn btn-secondary col-1 cal-button m-1" onClick={this.allClear}>AC</button>
+                    <button className="btn btn-secondary col-1 cal-button m-1" onClick={this.clear}>C</button>
+                    <button className="btn btn-secondary col-1 cal-button m-1" onClick={this.backspace}>&#8592;</button>
                     <ButtonOperator number1={this.state.number1} nextValue={this.nextValue} setOption={this.setOption} option={4} />
                 </div>
                 <div className="row d-flex justify-content-center">

@@ -23,7 +23,7 @@ class ButtonResult extends Component{
 
     render(){
         return(
-            <button className="btn btn-warning col-1" onClick={this.result}>=</button>
+            <button className="btn btn-warning col-1 cal-button m-1" onClick={this.result}>=</button>
         )
     }
 }
