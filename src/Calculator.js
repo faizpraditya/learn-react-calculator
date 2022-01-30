@@ -64,25 +64,29 @@ class Calculator extends Component {
 
     render() {
         return(
-        <div>
-            <h1>{this.state.number1}</h1>
-            <button onClick={() => this.setValue(7)}>7</button>
-            <button onClick={() => this.setValue(8)}>8</button>
-            <button onClick={() => this.setValue(9)}>9</button>
-            <ButtonDivision number1={this.state.number1} nextValue={this.nextValue} setOption={this.setOption} /> <br/>
-            <button onClick={() => this.setValue(4)}>4</button>
-            <button onClick={() => this.setValue(5)}>5</button>
-            <button onClick={() => this.setValue(6)}>6</button>
-            <ButtonMultiply number1={this.state.number1} nextValue={this.nextValue} setOption={this.setOption} /> <br/>
-            <button onClick={() => this.setValue(1)}>1</button>
-            <button onClick={() => this.setValue(2)}>2</button>
-            <button onClick={() => this.setValue(3)}>3</button>
-            <ButtonMinus number1={this.state.number1} nextValue={this.nextValue} setOption={this.setOption} /> <br/>
-            <button onClick={() => this.clear()}>C</button>
-            <button onClick={() => this.setValue(0)}>0</button>
-            <ButtonResult number1={this.state.number1} number2={this.state.number2} getResult={this.getResult} option={this.state.option}/>
-            <ButtonPlus number1={this.state.number1} nextValue={this.nextValue} setOption={this.setOption} />
+        <div className="container my-5">
+            <div className="me-2">
+                <h1 className="display-1 text-light">{this.state.number1}</h1>
             </div>
+            <div className="ms-5">
+                <button className="btn btn-dark px-5" onClick={() => this.setValue(7)}>7</button>
+                <button className="btn btn-dark px-5" onClick={() => this.setValue(8)}>8</button>
+                <button className="btn btn-dark px-5" onClick={() => this.setValue(9)}>9</button>
+                <ButtonDivision number1={this.state.number1} nextValue={this.nextValue} setOption={this.setOption} /> <br/>
+                <button className="btn btn-dark px-5" onClick={() => this.setValue(4)}>4</button>
+                <button className="btn btn-dark px-5" onClick={() => this.setValue(5)}>5</button>
+                <button className="btn btn-dark px-5" onClick={() => this.setValue(6)}>6</button>
+                <ButtonMultiply number1={this.state.number1} nextValue={this.nextValue} setOption={this.setOption} /> <br/>
+                <button className="btn btn-dark px-5" onClick={() => this.setValue(1)}>1</button>
+                <button className="btn btn-dark px-5" onClick={() => this.setValue(2)}>2</button>
+                <button className="btn btn-dark px-5" onClick={() => this.setValue(3)}>3</button>
+                <ButtonMinus number1={this.state.number1} nextValue={this.nextValue} setOption={this.setOption} /> <br/>
+                <button className="btn btn-warning px-5" onClick={() => this.clear()}>C</button>
+                <button className="btn btn-dark px-5" onClick={() => this.setValue(0)}>0</button>
+                <ButtonResult number1={this.state.number1} number2={this.state.number2} getResult={this.getResult} option={this.state.option}/>
+                <ButtonPlus number1={this.state.number1} nextValue={this.nextValue} setOption={this.setOption} />
+            </div>
+        </div>
         )
     }
 }

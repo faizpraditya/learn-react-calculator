@@ -8,7 +8,7 @@ class ButtonMultiply extends Component{
 
     render(){
         return(
-            <button onClick={this.multiply}>*</button>
+            <button className="btn btn-secondary" style={{width:"56px"}} onClick={this.multiply}>*</button>
         )
     }
 }

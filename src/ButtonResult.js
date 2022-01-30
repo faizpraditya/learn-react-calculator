@@ -22,7 +22,7 @@ class ButtonResult extends Component{
 
     render(){
         return(
-            <button onClick={this.result}>=</button>
+            <button className="btn btn-primary px-5" onClick={this.result}>=</button>
         )
     }
 }

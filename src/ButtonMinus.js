@@ -8,7 +8,7 @@ class ButtonMinus extends Component{
 
     render(){
         return(
-            <button onClick={this.minus}>-</button>
+            <button className="btn btn-secondary" style={{width:"56px"}} onClick={this.minus}>-</button>
         )
     }
 }

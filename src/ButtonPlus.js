@@ -8,7 +8,7 @@ class ButtonPlus extends Component{
 
     render(){
         return(
-            <button onClick={this.plus}>+</button>
+            <button className="btn btn-secondary" style={{width:"56px"}} onClick={this.plus}>+</button>
         )
     }
 }

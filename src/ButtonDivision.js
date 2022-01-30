@@ -8,7 +8,7 @@ class ButtonDivision extends Component{
 
     render(){
         return(
-            <button onClick={this.division}>/</button>
+            <button className="btn btn-secondary" style={{width:"56px"}} onClick={this.division}>/</button>
         )
     }
 }
