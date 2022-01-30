@@ -18,11 +18,12 @@ class ButtonResult extends Component{
             default:
                 break;
         }
+        this.props.setOption(5)
     }
 
     render(){
         return(
-            <button className="btn btn-primary px-5" onClick={this.result}>=</button>
+            <button className="btn btn-warning col-1" onClick={this.result}>=</button>
         )
     }
 }

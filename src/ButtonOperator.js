@@ -11,11 +11,11 @@ class ButtonOperator extends Component{
             case 1:
                 return(<>+</>)
             case 2:
-                return(<>-</>)
+                return(<>&minus;</>)
             case 3:
-                return(<>*</>)
+                return(<>&times;</>)
             case 4:
-                return(<>/</>)
+                return(<>&divide;</>)
             default:
                 break;
         }
@@ -23,7 +23,7 @@ class ButtonOperator extends Component{
 
     render(){
         return(
-            <button className="btn btn-secondary" style={{width:"56px"}} onClick={this.operator}>{this.sign()}</button>
+                <button className="btn btn-warning col-1" onClick={this.operator} >{this.sign()}</button>
         )
     }
 }
