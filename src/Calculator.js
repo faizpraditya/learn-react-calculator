@@ -75,6 +75,12 @@ class Calculator extends Component {
         })
     }
 
+    componentDidUpdate(){
+        if (this.option>0 && this.option<5){
+            
+        }
+    }
+
     render() {
         return(
         <div className="container my-5">
